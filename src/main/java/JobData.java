@@ -100,7 +100,7 @@ public class JobData {
         for (HashMap<String, String> row : allJobs) {
             for (String column : row.keySet()) {
                 String aValue = row.get(column).toLowerCase();
-                if (aValue.contains(value.toLowerCase())){
+                if (aValue.contains(value.toLowerCase())) {
                     selectedJob.add(row);
                 }
                 return selectedJob;
@@ -108,17 +108,12 @@ public class JobData {
         }
 
 
-
-
-
-
-
-
         // load data, if not already loaded
         loadData();
 
         // TODO - implement this method
         return null;
+
     }
 
     /**
